@@ -10,7 +10,7 @@ import (
 	one "jhthompson.ca/advent-of-code-2024/01"
 )
 
-type solver func([]string) int
+type Solver func([]string) int
 
 func TestSolve(t *testing.T) {
 	slog.SetLogLoggerLevel(slog.LevelDebug)
@@ -19,7 +19,7 @@ func TestSolve(t *testing.T) {
 	verifySolution("data/01.2.sample.in", "data/01.2.sample.out", one.SolvePartTwo, t)
 }
 
-func verifySolution(inputFile string, outputFile string, solve solver, t *testing.T) {
+func verifySolution(inputFile string, outputFile string, solve Solver, t *testing.T) {
 	t.Helper()
 
 	lines := ReadLines(inputFile)
