@@ -6,6 +6,7 @@ import (
 	"os"
 
 	one "jhthompson.ca/advent-of-code-2024/01"
+	two "jhthompson.ca/advent-of-code-2024/02"
 )
 
 func main() {
@@ -15,6 +16,9 @@ func main() {
 	one.SolvePartOne(p1)
 	one.SolvePartTwo(p1)
 
+	p2 := ReadLines("data/02.in")
+	two.SolvePartOne(p2)
+	two.SolvePartTwo(p2)
 }
 
 func ReadLines(filename string) []string {

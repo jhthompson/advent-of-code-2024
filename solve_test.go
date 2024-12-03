@@ -8,6 +8,7 @@ import (
 	"testing"
 
 	one "jhthompson.ca/advent-of-code-2024/01"
+	two "jhthompson.ca/advent-of-code-2024/02"
 )
 
 type Solver func([]string) int
@@ -17,6 +18,9 @@ func TestSolve(t *testing.T) {
 
 	verifySolution("data/01.1.sample.in", "data/01.1.sample.out", one.SolvePartOne, t)
 	verifySolution("data/01.2.sample.in", "data/01.2.sample.out", one.SolvePartTwo, t)
+
+	verifySolution("data/02.1.sample.in", "data/02.1.sample.out", two.SolvePartOne, t)
+	verifySolution("data/02.2.sample.in", "data/02.2.sample.out", two.SolvePartTwo, t)
 }
 
 func verifySolution(inputFile string, outputFile string, solve Solver, t *testing.T) {
