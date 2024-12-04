@@ -9,6 +9,7 @@ import (
 
 	one "jhthompson.ca/advent-of-code-2024/01"
 	two "jhthompson.ca/advent-of-code-2024/02"
+	three "jhthompson.ca/advent-of-code-2024/03"
 )
 
 type Solver func([]string) int
@@ -21,6 +22,9 @@ func TestSolve(t *testing.T) {
 
 	verifySolution("data/02.1.sample.in", "data/02.1.sample.out", two.SolvePartOne, t)
 	verifySolution("data/02.2.sample.in", "data/02.2.sample.out", two.SolvePartTwo, t)
+
+	verifySolution("data/03.1.sample.in", "data/03.1.sample.out", three.SolvePartOne, t)
+	verifySolution("data/03.2.sample.in", "data/03.2.sample.out", three.SolvePartTwo, t)
 }
 
 func verifySolution(inputFile string, outputFile string, solve Solver, t *testing.T) {
