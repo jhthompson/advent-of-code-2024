@@ -8,6 +8,7 @@ import (
 	one "jhthompson.ca/advent-of-code-2024/01"
 	two "jhthompson.ca/advent-of-code-2024/02"
 	three "jhthompson.ca/advent-of-code-2024/03"
+	four "jhthompson.ca/advent-of-code-2024/04"
 )
 
 func main() {
@@ -24,6 +25,10 @@ func main() {
 	p3 := ReadLines("data/03.in")
 	three.SolvePartOne(p3)
 	three.SolvePartTwo(p3)
+
+	p4 := ReadLines("data/04.in")
+	four.SolvePartOne(p4)
+	four.SolvePartTwo(p4)
 }
 
 func ReadLines(filename string) []string {
